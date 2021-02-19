@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+    <head> 
+         <title>Pagina Aaron</title>
+         <style> 
+            #Datos{background-color: gainsboro; margin: 5px; align-items: center;}
+            #Tex{background-color: gainsboro; margin: 5px;}
+            .Cl{background-color: gainsboro; margin: 5px;}
+        </style>
+        <script>
+            var segundo = 0;
+            function Clicked(){
+                                alert("Datos guardados");
+                            }
+            function listo() {
+                //alert("DOM cargado");
+                //set
+                //setTimeout(segundero,1000);
+                setInterval(segundero,1000);
+            }
+            
+            function segundero(){
+                var elemento = document.getElementById("Reloj");
+                elemento.innerHTML="00:00:" + segundo;
+                segundo++;
+                //setTimeout(segundero,1000);
+            }
+        </script>
